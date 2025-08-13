@@ -17,7 +17,7 @@ connection.once('open', () => {
 })
 
 const notesRouter = require('./routes/notes');
-app.use('/notes', notesRouter);
+app.use('/api/v1', notesRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
