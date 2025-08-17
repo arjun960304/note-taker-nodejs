@@ -18,7 +18,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          IMAGE=${{ secrets.DOCKER_USERNAME }}/note-backend:latest
+          IMAGE=${{ secrets.DOCKER_USERNAME }}/note-taker-nodejs:latest
           docker build -t $IMAGE .
           docker push $IMAGE
 
